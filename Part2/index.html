@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+
+<style>
+
+    body {
+        background-color: lightblue;
+    }
+    h1,h2,h3{
+        padding:20px;
+    }
+    p{
+        font-size: 14px;
+    }
+    li {
+        list-style-type: circle;
+    }
+
+</style>
+<title>Even or Odd Checker</title>
+<script>
+function evenOrOdd(num) {
+    if (num % 2 === 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
+}
+
+function checkNumber() {
+    let inputNumber = document.getElementById("numberInput").value;
+    let result = evenOrOdd(parseInt(inputNumber));
+    document.getElementById("result").innerText = "The number is " + result;
+}
+
+</script>
+</head>
+<body>
+<h1>Welcome to...</h1> 
+
+<img src="tommy.png" width="100" height="100" ></img>
+<p>This is a paragraph...</p> 
+<ul> 
+    <li>Item 1</li> 
+    <li>Item 2</li> 
+</ul><p>Ordered List:</p> 
+<ol>
+    <li>Item 1</li> 
+    <li>Item 2</li> 
+    <li>Item 1</li> 
+</ol>
+<p>Check my Github  ></p><a href = "https://github.com">GITHUB</a>
+<h3 style="color:blue;">This is a heading</h3>
+
+<h1>Even or Odd Checker</h1>
+<p>Enter a number:</p>
+<input type="number" id="numberInput">
+<button onclick="checkNumber()">Check</button>
+<p id="result"></p>
+</body>
+</html>
